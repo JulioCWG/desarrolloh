@@ -33,6 +33,7 @@ header{
   padding-right: 90px;
   padding-top: 0;
   height: 60px;
+
 }
 h1{
 
@@ -57,6 +58,7 @@ section {
   background: aliceblue;
   transition: .3s;
   padding: 0;
+
 }
 .contenido:hover img{
   /*transform: scale(1.3);*/
@@ -68,6 +70,22 @@ section {
   border: 5px solid #fbc6a6;
   background: white;
   border-radius:10px;
+}
+
+.contenido:hover .Hp1 {
+transform: translateY(0);
+}
+
+.contenido:hover .Pp1{
+  transform: translateX(0);
+}
+
+.contenido:hover .Pp2{
+  transform: scale(1);
+}
+.contenido:hover .Hp2{
+  transform: rotate(0);
+  opacity:inherit;
 }
 /*.contenido h2{
   display: flex;
@@ -95,18 +113,29 @@ section {
   margin: 0;
   color: #a2d6bf;
   font-size: 30px;
+  transform: translateY(-200px);
+  transition: .8s;
+}
 
+.parrafo1 p{
+  transform: translateX(-500px);
+  transition: 1.2s;
 }
-.contenido:hover .parrafo1 {
-/*  animation: 2s parrafo;*/
-}
+
 .parrafo2 h2{
   display: flex;
   margin: 0;
   color: peru;
   font-size: 30px;
+  transform: rotate(90deg);
+  opacity: 0;
+  transition: .8s
 }
 
+.parrafo2 p{
+  transform: scale(0);
+  transition: 1.3s;
+}
 
 .caja{
   margin:20px 40px;
@@ -118,9 +147,6 @@ section {
   margin: 20px;
 }
 
-.caja:hover {
-
-}
 
 
 @keyframes bebe {
