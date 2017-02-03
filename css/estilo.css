@@ -218,7 +218,14 @@ transform: translateY(0);
 }
 }
 
-
+@keyframes viejo {
+0%{
+  opacity: 0;
+}
+100%{
+  opacity: 10;
+}
+}
 
 
 @media screen and (max-width:1000px) {
@@ -408,23 +415,31 @@ footer{
 }
 .content-viejo{
   display: flex;
+  transition: .8s;
 }
 .caja-v{
   margin-left: -35px;
   margin-top:57px;
+  animation: .8s viejo;
 }
 .parrafo6{
   position: fixed;
   margin-left: 238px;
   margin-top: 113px;
+  transition: .8s;
 }
 .Hp6{
   font-size: 16px;
+  animation: .8s hparrafo3;
 
 }
 .Pp6{
   font-size: 12px;
-  margin-top: 21px;
-  display:inline;
+  margin-top: 27px;
+  display:flex;
+  animation: .8s hparrafo4;
 }
+}
+@media screen and (max-width:470px){
+  
 }
