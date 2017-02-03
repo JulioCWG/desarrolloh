@@ -18,7 +18,9 @@ body{
 .content-viejo{
   display: none;
 }
-
+.fin{
+  display: none;
+}
 a{
   color: white;
   text-decoration: none;
@@ -441,5 +443,27 @@ footer{
 }
 }
 @media screen and (max-width:470px){
-  
+  .content-viejo{
+    display: none;
+  }
+
+  .fin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+  }
+
+  .Hp-fin{
+    color: dimgrey;
+    animation: .8s hparrafo4;
+    animation: .8s pparrafo4;
+  }
+  header{
+    background: white;
+    color:white;
+  }
+  footer{
+    background: white;
+  }
 }
