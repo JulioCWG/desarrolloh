@@ -184,6 +184,23 @@ transform: translateY(0);
 }
 }
 
+@keyframes joven {
+0%{
+  transform: translateY(-1px);
+}
+100%{
+  transform: translateY(0px);
+}
+}
+
+@keyframes hparrafo4 {
+0%{
+  transform: scale(0);
+}
+100%{
+  transform: scale(1);
+}
+}
 
 
 
@@ -277,7 +294,7 @@ transform: translateY(0);
     margin: 0;
     flex-direction: row;
     background: #f14343;
-    transition: .5s;
+    transition: 1s;
     padding: 0;
   }
   .caja-j{
@@ -285,6 +302,11 @@ transform: translateY(0);
     position: relative;
     display: flex;
     align-items: center;
+    transition: 1s;
+  }
+  .caja-j .cuerpo-j{
+    animation: 1s joven infinite;
+    transition: 1s;
   }
   .cuerpo-j{
     margin-left: -315px;
@@ -296,6 +318,7 @@ transform: translateY(0);
     color:#a01010;
     font-size: 30px;
     border-bottom: solid #a01010 5px;
+    animation: .8s hparrafo4;
   }
   .Pp4{
     color: #404040;
