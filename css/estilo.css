@@ -12,6 +12,10 @@ body{
 .content-joven{
   display: none;
 }
+.content-adulto{
+  display:none;
+}
+
 a{
   color: white;
   text-decoration: none;
@@ -186,10 +190,10 @@ transform: translateY(0);
 
 @keyframes joven {
 0%{
-  transform: translateY(-1px);
+  transform: translateY(0px);
 }
 100%{
-  transform: translateY(0px);
+  transform: translateY(-1px);
 }
 }
 
@@ -201,6 +205,16 @@ transform: translateY(0);
   transform: scale(1);
 }
 }
+
+@keyframes pparrafo4 {
+0%{
+  transform: rotate(0deg);
+}
+100%{
+  transform: rotate(360deg);
+}
+}
+
 
 
 
@@ -274,12 +288,12 @@ transform: translateY(0);
   /* Css para joven */
 
   header{
-    background:#f14343;
-    color: white;
+    background:#ff8181;
+    color: #f0c7b7;
   }
 
   footer{
-    background: black;
+    background:#ca6c36;
     bottom: 0;
     height: 80px;
     display: flex;
@@ -293,7 +307,7 @@ transform: translateY(0);
     align-items: flex-start;
     margin: 0;
     flex-direction: row;
-    background: #f14343;
+    background: #ff8181;
     transition: 1s;
     padding: 0;
   }
@@ -315,14 +329,48 @@ transform: translateY(0);
     margin-top: 95px;
   }
   .Hp4{
-    color:#a01010;
+    color:#f0c7b7;
     font-size: 30px;
-    border-bottom: solid #a01010 5px;
+    border-bottom: solid #ca6c36 5px;
     animation: .8s hparrafo4;
   }
   .Pp4{
     color: #404040;
     font-size: 18px;
+    animation: .5s pparrafo4;
   }
 
+}
+
+@media screen and (max-width:775px) {
+  header{
+    background: cadetblue;
+    color: #af3c3c;
+  }
+
+  footer{
+    background: #121212
+  }
+
+  .content-joven{
+    display: none;
+  }
+
+  .content-adulto{
+    display: flex;
+    flex-direction: row-reverse;
+    background: cadetblue;
+  }
+
+  .parrafo5{
+    margin-top:120px;
+  }
+
+  .Pp5{
+    font-size: 15px;
+    color:whitesmoke;
+  }
+  .caja-a{
+    margin-top: 30px;
+  }
 }
