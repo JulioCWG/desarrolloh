@@ -5,8 +5,11 @@ body{
   flex-direction: column;
   font-family: 'Allerta', sans-serif;
 }
-
+/*ocultando pantallas*/
 .content-niño{
+  display: none;
+}
+.content-joven{
   display: none;
 }
 a{
@@ -150,7 +153,7 @@ transform: translateY(0);
   margin: 20px;
 
 }
-
+/*Animaciones */
 @keyframes bebe {
 0%{
   opacity: 0;
@@ -245,9 +248,58 @@ transform: translateY(0);
 }
 
 @media screen and (max-width:850px) {
+
+  /*ocultando las pantallas*/
   .content-niño{
     display: none;
   }
 
+  /* Css para joven */
+
+  header{
+    background:#f14343;
+    color: white;
+  }
+
+  footer{
+    background: black;
+    bottom: 0;
+    height: 80px;
+    display: flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+
+  }
+  .content-joven{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    flex-direction: row;
+    background: #f14343;
+    transition: .5s;
+    padding: 0;
+  }
+  .caja-j{
+    margin-top:50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .cuerpo-j{
+    margin-left: -315px;
+  }
+  .parrafo4{
+    margin-top: 95px;
+  }
+  .Hp4{
+    color:#a01010;
+    font-size: 30px;
+    border-bottom: solid #a01010 5px;
+  }
+  .Pp4{
+    color: #404040;
+    font-size: 18px;
+  }
 
 }
