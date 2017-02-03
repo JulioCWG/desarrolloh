@@ -15,6 +15,9 @@ body{
 .content-adulto{
   display:none;
 }
+.content-viejo{
+  display: none;
+}
 
 a{
   color: white;
@@ -388,4 +391,40 @@ transform: translateY(0);
     margin-right: -315px;
     animation: .8s niño infinite;
   }
+}
+
+@media screen and (max-width:580px){
+.content-adulto{
+  display: none;
+}
+
+header{
+  background: gainsboro;
+  color: #8d6568;
+  font-size: 13px;
+}
+footer{
+  background: #654849;
+}
+.content-viejo{
+  display: flex;
+}
+.caja-v{
+  margin-left: -35px;
+  margin-top:57px;
+}
+.parrafo6{
+  position: fixed;
+  margin-left: 238px;
+  margin-top: 113px;
+}
+.Hp6{
+  font-size: 16px;
+
+}
+.Pp6{
+  font-size: 12px;
+  margin-top: 21px;
+  display:inline;
+}
 }
