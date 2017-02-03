@@ -364,13 +364,28 @@ transform: translateY(0);
 
   .parrafo5{
     margin-top:120px;
+    transition: .8s;
+    margin-left: 35px;
+    padding: 0;
   }
 
   .Pp5{
     font-size: 15px;
     color:whitesmoke;
+    animation: .5s hparrafo4;
+  }
+  .Hp5{
+    animation: .8s hparrafo3;
+
   }
   .caja-a{
     margin-top: 30px;
+    align-items: center;
+    display: flex;
+    transition: .5s
+  }
+  .cabeza-a{
+    margin-right: -315px;
+    animation: .8s niño infinite;
   }
 }
